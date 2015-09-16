@@ -4,3 +4,6 @@
 
 
 import inquisition
+CV = 'spanish'
+CVI = inquisition.SPANISH
+FLEMISH = CVI[:19]+'flemish'+CVI[26:]

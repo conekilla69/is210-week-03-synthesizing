@@ -10,10 +10,10 @@ def get_member_count(my_sequence):
         my_sequence (sequence): The sequence object being measured.
 
     Returns:
-        mixed: If the object can be measured it returns an integer. If not it
-               returns ``False``
+        mixed: If the object can be measured it returns an integer. \n
+        If not true, return ``False``
 
-    Examples:
+     Examples:
         >>> get_member_count(42)
         False
 
@@ -38,7 +38,7 @@ def is_empty(my_sequence):
         my_sequence (sequence): The sequence object being measured.
 
     Returns:
-        bool: If empty, returns True, otherwise, False.
+        bool: If condition is empty, return True, if not, return False.
 
     Raises:
         TypeError: If my_sequence is not a sequence object type.
@@ -61,7 +61,7 @@ def is_empty(my_sequence):
     """
     count = get_member_count(my_sequence)
 
-    if count != False:
+    if count == False:
         return count == 0
     else:
         raise TypeError('Object has no len()')
@@ -69,4 +69,4 @@ def is_empty(my_sequence):
 
 TEST = ''
 print len(TEST)
-print is_empty(TEST)
+print is_empty('')
