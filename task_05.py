@@ -45,13 +45,13 @@ def is_empty(my_sequence):
 
     Examples:
 
-        >>> is_empty('')
+        >>> is_empty('NONE')
         True
 
         >>> is_empty('apple')
         False
 
-        >>> is_empty([])
+        >>> is_empty('NONE')
         True
 
         >>> is_empty(42)
@@ -64,7 +64,7 @@ def is_empty(my_sequence):
     if count == False:
         return count == 0
     else:
-        raise TypeError('Object has no len()')
+        raise TypeError('Object has no len(Ni)')
 
 
 TEST = ''
